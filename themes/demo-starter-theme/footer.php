@@ -25,6 +25,9 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'demo-starter-theme' ), 'demo-starter-theme', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 		</div><!-- .site-info -->
+		<div class="custom-footer">
+			<?php esc_html_e( 'Custom Footer Text', 'demo-starter-theme' ) ?>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
