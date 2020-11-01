@@ -3,10 +3,13 @@
 <div id="primary" class="content-area">
 
     <main id="main" class="site-main" role="main">
+
+        <h1><?php wp_title(''); ?></h1>
+
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <!--This will first load all the files starting with content then select the
-            right file depending on the post format returned...-->
-            <?php get_template_part( 'template-parts/content', get_post_format() )?>
+            <!--TEMP: Since this will only load the template parts with content-posts in the name
+            a new file is created call content-posts-gallery-->
+            <?php get_template_part( 'template-parts/content-posts', get_post_format() )?>
 
         <?php endwhile; else :  ?>
 
@@ -14,7 +17,9 @@
 
         <?php endif; ?>
 
-        <p>Template: single.php</p>
+        <?php echo paginate_links(); ?>
+
+        <p>Template: home.php</p>
     </main>
 
 </div>
