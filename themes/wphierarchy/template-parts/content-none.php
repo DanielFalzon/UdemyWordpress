@@ -5,7 +5,9 @@
     </header>
 
     <div class="entry-content">
-        <p><?php esc_html_e('Sorry no content found', 'wphierarchy'); ?></p>
+        <p><?php esc_html_e('4040 - Sorry no content found', 'wphierarchy'); ?></p>
+    
+        <p><?php echo get_search_form()?></p> 
     </div>
 
 </article>
