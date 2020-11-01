@@ -19,6 +19,13 @@
                         </a>
 
                         <?php the_content(); ?>
+                        
+                        <P>
+                            Skills:
+                            <?php the_terms( $post->ID, 'skills'); ?>
+
+                        </P>
+
 
                         <p>
                             <a class="button" href="<?php the_field( 'url' )?>">
