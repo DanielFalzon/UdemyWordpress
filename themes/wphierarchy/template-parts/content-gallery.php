@@ -3,13 +3,10 @@
     <header class="entry-header">
 
     <span class="dashicons dashicons-format-<?php echo get_post_format( $post->ID )?>"></span>
+    <?php esc_html_e("Content gallery template!!", 'wphierarchy'); ?>
 
     <h1><?php the_title('<h1>', '</h1>') ?></h1>
     
-    <div class="byline">
-        <?php esc_html_e( 'Author:' ); ?> <?php the_author(); ?>
-    </div>
-
     </header>
 
     <div class="entry-content">
