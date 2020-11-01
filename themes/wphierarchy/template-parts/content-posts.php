@@ -7,7 +7,7 @@
     <h1><?php the_title('<h2><a href="' . esc_url( get_permalink() ) . '">', '</h2>') ?></h1>
     
     <div class="byline">
-        <?php esc_html_e( 'Author:' ); ?> <?php the_author(); ?>
+        <?php esc_html_e( 'Author:' ); ?> <?php the_author_posts_link(); ?>
     </div>
 
     </header>
