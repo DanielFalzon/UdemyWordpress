@@ -5,6 +5,15 @@ if( ! is_active_sidebar( 'main-sidebar' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
+<?php $args = [
+        'type'              => 'weekly',
+        'limit'             => 10,
+        'show_post_count'   => true,
+        'order'             => 'ASC'
+        ];
+
+        wp_get_archives( $args) ; ?>
+
 
   <?php wp_loginout( get_permalink() ); ?>
 

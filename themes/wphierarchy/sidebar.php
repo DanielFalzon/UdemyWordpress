@@ -5,5 +5,15 @@
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
-    <?php dynamic_sidebar( 'main-sidebar' ); ?>
+
+    <?php 
+        $args = [
+        'type'              => 'yearly',
+        'limit'             => 3,
+        'show_post_count'   => true
+        ];
+
+        wp_get_archives( $args) ;
+    ?>
+    <?php dynamic_sidebar( 'main-sidebar' ); echo("test")?>
 </aside>
